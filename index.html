@@ -133,8 +133,22 @@
           Только полезная информация и никакого спама, <br />честное
           бойскаутское!
         </p>
-        <input type="text" name="e-mail" value="Ваш e-mail" />
-        <button type="submit">Подписаться</button>
+        <form
+          class="newsletter-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <input
+            class="field"
+            placeholder="Ваш e-mail"
+            type="email"
+            name="newsletter-email"
+            required
+          />
+          <button class="button newsletter-button" type="submit">
+            Подписаться
+          </button>
+        </form>
       </section>
     </main>
 
@@ -158,9 +172,9 @@
           </li>
         </ul>
       </section>
-      <section class="footer-contact">
+      <div class="footer-contact">
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
+      </div>
       <div>
         <a class="logo_htmlacademy" href="https://htmlacademy.ru/">
           <img class="footer-logo" alt="Логотип HTML Academy" src="" />
