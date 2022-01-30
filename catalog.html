@@ -20,7 +20,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -106,7 +106,7 @@
                   <input
                     class="contol-input"
                     type="radio"
-                    name="radio"
+                    name="type"
                     value="Гостиница"
                     checked
                   />Гостиница
@@ -135,7 +135,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
+          <!-- <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <input class="control-input" type="number" name="от" value="0" />
             <input class="control-input" type="number" name="до" value="9000" />
@@ -149,12 +149,12 @@
               step="0.01"
               value="0"
             />
-          </fieldset>
+          </fieldset> -->
 
           <button class="button" type="submit">Применить</button>
           <button class="button-secondary" type="reset">Сбросить</button>
         </form>
-        <h2 class="catalog">Найдено гостиниц: 38</h2>
+        <p class="catalog">Найдено гостиниц:<span>38</span></p>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешевые</option>
           <option value="popular">Сначала дорогие</option>
@@ -181,22 +181,7 @@
           <button type="button" class="hotel-card-button" value="В избранное">
             В избранное
           </button>
-          <ul class="hotel-class">
-            <li class="hotel-class-item">
-              <div title="Одна звезда"><img src="#" alt="Одна звезда" /></div>
-            </li>
-            <li class="hotel-class-item">
-              <div title="Две звезды"><img src="#" alt="Две звезды" /></div>
-            </li>
-            <li class="hotel-class-item">
-              <div title="Три звезды"><img src="#" alt="Три звезды" /></div>
-            </li>
-            <li class="hotel-class-item">
-              <div title="Четыре звезды">
-                <img src="#" alt="Четыре звезды" />
-              </div>
-            </li>
-          </ul>
+          <span class="visually-hidden">Четыре звезда</span>
           <p class="rating-area">Рейтинг: 8,5</p>
         </div>
 
@@ -209,17 +194,7 @@
           <p class="hotel-card-description">От 3000 ₽</p>
           <a class="hotel-card-link" href="#">Подробнее</a>
           <button type="button" class="hotel-card-button">В избранное</button>
-          <ul class="hotel-class">
-            <li class="hotel-class-item">
-              <div title="Одна звезда"><img src="#" alt="Одна звезда" /></div>
-            </li>
-            <li class="hotel-class-item">
-              <div title="Две звезды"><img src="#" alt="Две звезды" /></div>
-            </li>
-            <li class="hotel-class-item">
-              <div title="Три звезды"><img src="#" alt="Три звезды" /></div>
-            </li>
-          </ul>
+          <span class="visually-hidden">Три звезды</span>
           <p class="rating-area">Рейтинг: 8,9</p>
         </div>
 
@@ -238,14 +213,7 @@
           >
             В избранном
           </button>
-          <ul class="hotel-class">
-            <li class="hotel-class-item">
-              <div title="Одна звезда"><img src="#" alt="Одна звезда" /></div>
-            </li>
-            <li class="hotel-class-item">
-              <div title="Две звезды"><img src="#" alt="Две звезды" /></div>
-            </li>
-          </ul>
+          <span class="visually-hidden">Две звезды</span>
           <p class="rating-area">Рейтинг: 9,2</p>
         </div>
 
@@ -260,14 +228,7 @@
           <button class="hotel-card-button" value="В избранное">
             В избранное
           </button>
-          <ul class="hotel-class">
-            <li class="hotel-class-item">
-              <div title="Одна звезда"><img src="#" alt="Одна звезда" /></div>
-            </li>
-            <li class="hotel-class-item">
-              <div title="Две звезды"><img src="#" alt="Две звезды" /></div>
-            </li>
-          </ul>
+          <span class="visually-hidden">Две звезды</span>
           <p class="rating-area">Рейтинг: 9,2</p>
         </div>
         <button class="button-show-more" type="button">Загрузить еще</button>
@@ -285,7 +246,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <p class="pagination-dots">…</p>
+            <a class="pagination-link" href="#">…</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
