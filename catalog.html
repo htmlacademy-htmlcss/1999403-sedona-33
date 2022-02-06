@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="page-header">
@@ -49,6 +50,7 @@
     </header>
 
     <main class="main-inner">
+	  <div class="catalog-header">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -150,6 +152,7 @@
           <button class="button" type="submit">Применить</button>
           <button class="button-secondary" type="reset">Сбросить</button>
         </form>
+	  </div>
         <p class="catalog">Найдено гостиниц:<span>38</span></p>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешевые</option>
@@ -287,14 +290,14 @@
         </select>
       </section>
 
-      <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">
+      <section class="newsletter-catalog">
+        <h2 class="newsletter-catalog-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-catalog-description">
           Только полезная информация и никакого спама, <br />честное
           бойскаутское!
         </p>
         <form
-          class="newsletter-form"
+          class="newsletter-catalog-form"
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
