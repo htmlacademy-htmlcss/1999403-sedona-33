@@ -50,19 +50,17 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   color: inherit;
-  background-color: #ffffff;
   text-decoration: none;
 }
 
 .main-index {
   color: #333333;
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: url("../images/background/bg-header.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -83,9 +81,8 @@ body {
   line-height: 36px;
 }
 
-.reasons-title,
-.advantages-title {
-  color: #000000;
+.advantages-title,
+.reasons-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -100,24 +97,18 @@ body {
   line-height: 21px;
 }
 
-.reasons-item-1,
-.reasons-item-2 {
+.reasons-item:nth-child(-n + 2) {
   color: #ffffff;
   background-color: #83b3d3;
 }
 
-.reasons-item-3,
-.reasons-item-5 {
+.reasons-item:nth-child(2n + 3),
+.advantages-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.reasons-item-4 {
+.reasons-item:nth-child(4) {
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-item-1,
-.advantages-item-3 {
-  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .hotels-title {
@@ -134,7 +125,7 @@ body {
 
 .newsletter {
   color: #000000;
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: url("../images/background/bg-newsletter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
