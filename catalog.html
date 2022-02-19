@@ -180,15 +180,17 @@
               <option value="popular">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-            <a class="button button-light" href="#">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a class="button button-light" href="#">
-              <span class="visually-hidden">Показать во весь экран</span>
-            </a>
-            <a class="button button-light" href="#">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+            <div class="catalog-info-display">
+              <a class="button button-light" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+              <a class="button button-light" href="#">
+                <span class="visually-hidden">Показать во весь экран</span>
+              </a>
+              <a class="button button-light" href="#">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </div>
           </div>
           <div class="catalog-cards">
             <div class="hotel-card">
@@ -288,40 +290,43 @@
               Загрузить еще
             </button>
           </div>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1 </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">…</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
-          <label for="hotels-number">Гостиниц на странице</label>
-          <div class="number">
-            <select
-              class="select-control"
-              id="hotels-number"
-              aria-label="Отображение"
-            >
-              <option value="popular">1</option>
-              <option value="popular">2</option>
-              <option value="popular">3</option>
-              <option value="popular">4</option>
-              <option value="popular">5</option>
-              <option value="popular">6</option>
-            </select>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1 </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">…</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+				<div class="hotels-on-page">
+            <label for="hotels-number">Гостиниц на странице:</label>
+            <div class="number">
+              <select
+                class="select-control"
+                id="hotels-number"
+                aria-label="Отображение"
+              >
+                <option value="popular">1</option>
+                <option value="popular">2</option>
+                <option value="popular">3</option>
+                <option value="popular">4</option>
+                <option value="popular">5</option>
+                <option value="popular">6</option>
+              </select>
+            </div>
           </div>
         </section>
 
