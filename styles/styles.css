@@ -536,16 +536,14 @@ body {
 
 .catalog-cards {
   display: grid;
-  grid-template-columns: 339px 339px 339px;
+  grid-template-columns: repeat(3, 340px);
+  gap: 10px 18px;
   margin: 0;
   padding: 0;
-  gap: 19px;
   margin-bottom: 34px;
 }
 
 .hotel-card {
-  display: flex;
-  flex-direction: column;
   padding: 20px;
 }
 
@@ -575,7 +573,7 @@ body {
 .hotel-card-button {
   color: #ffffff;
   background-color: #83b3d3;
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -589,7 +587,7 @@ body {
 .hotel-card-button-active {
   color: #ffffff;
   background-color: #7db54f;
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -635,7 +633,6 @@ body {
 }
 
 .hotel-card-description-hotel {
-  display: block;
   width: 133px;
   margin: 0;
   margin-right: 25px;
@@ -644,7 +641,6 @@ body {
 }
 
 .hotel-card-description-price {
-  display: block;
   width: 143px;
   margin: 0;
   font-size: 18px;
@@ -676,7 +672,7 @@ body {
 .button-show-more {
   color: #ffffff;
   background-color: #83b3d3;
-  font-family: PT Sans;
+  font-family: PT Sans, sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
