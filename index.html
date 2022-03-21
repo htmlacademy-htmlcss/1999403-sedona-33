@@ -195,9 +195,7 @@
           </li>
         </ul>
       </section>
-      <div class="footer-contact">
-        <a class="footer-contact-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </div>
+      <a class="footer-contact-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <div>
         <a class="logo-htmlacademy" href="https://htmlacademy.ru/">
           <svg class="footer-logo" width="115" height="33" viewBox="0 0 115 34" fill="none"
@@ -209,7 +207,7 @@
       </div>
     </footer>
 
-    <!-- Для закрытия модального окна в первый div добавить класс "modal-container-close" -->
+    <!-- Для открытия/закрытия модального окна в первом div удалить/добавить класс "modal-container-close" -->
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <div class="modal-title-close">
@@ -245,19 +243,19 @@
             <div class="field-group field-group-adult">
               <span class="modal-field-label">Взрослые:</span>
               <div class="number" data-step="1" data-min="1" data-max="100">
-                <a href="#" class="number-minus">
+                <button class="number-minus">
                   <svg class="number-minus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9v2h14V9H3Z" />
                   </svg>
-                </a>
+                </button>
                 <input class="number-text" type="text" name="count" value="1">
-                <a href="#" class="number-plus">
+                <button class="number-plus">
                   <svg class="number-plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
             <div class="field-group field-group-kid">
