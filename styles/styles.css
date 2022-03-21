@@ -28,7 +28,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .button-filter {
@@ -146,11 +146,6 @@ body {
 
 .page-header {
   background-color: #ffffff;
-  /* position: sticky;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1000; */
 }
 
 .navigation {
@@ -173,7 +168,7 @@ body {
   padding: 0;
   list-style-type: none;
   align-items: center;
-  height: 65px;
+  min-height: 65px;
 }
 
 .navigation-user {
@@ -313,7 +308,7 @@ body {
   padding-top: 51px;
   padding-bottom: 82px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #333333;
   background-image: url("../images/background/bg-header.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -322,7 +317,8 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -485,7 +481,7 @@ body {
 .newsletter {
   padding: 94px 0;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #333333;
   background-image: url("../images/background/bg-newsletter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -513,6 +509,7 @@ body {
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
+  background-color: #ffffff;
 }
 
 .footer-social {
@@ -543,7 +540,7 @@ body {
   margin-right: 0;
 }
 
-.footer-contact {
+.footer-contact-tel {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -556,15 +553,15 @@ body {
   margin-left: 34px;
 }
 
-.footer-contact:hover .footer-contact-tel {
+.footer-contact-tel:hover {
   color: #756257;
 }
 
-.footer-contact:focus {
+.footer-contact-tel:focus {
   border: 3px solid #83b3d3;
 }
 
-.footer-contact:active .footer-contact-tel {
+.footer-contact-tel:active {
   color: rgba(117, 98, 87, 0.3);
 }
 
@@ -636,17 +633,19 @@ body {
 }
 
 .catalog-header {
-  padding: 32px 72px 83px;
-  margin-bottom: 32px;
+  padding: 32px 72px 70px;
+  margin-bottom: 43px;
   color: #ffffff;
+  background-color: #333333;
   background-image: url("../images/background/bg-catalog.jpg");
-  background-size: 100% auto;
+  /* background-size: 100% auto; */
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .inner-header-title {
   margin-top: 0;
-  margin-bottom: -5px;
+  margin-bottom: -7px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -1190,7 +1189,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 32px;
+  margin-top: 27px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1611,7 +1610,8 @@ body {
 .number-text {
   display: flex;
   color: #000000;
-  line-height: 50px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 24px;
   font-weight: 700;
   font-size: 18px;
   height: 50px;
