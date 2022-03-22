@@ -126,7 +126,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 12px 144px;
+  padding: 12px 150px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -359,7 +359,6 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -999,6 +998,7 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  width: 141px;
 }
 
 .hotel-card-button:hover {
@@ -1075,6 +1075,7 @@ body {
   text-decoration: none;
   padding: 8px 23px;
   border-radius: 4px;
+  width: 87px;
 }
 
 .hotel-card-link-more:hover {
@@ -1197,6 +1198,11 @@ body {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
+}
+
+.range-bar-style {
+  left: 0;
+  width: 227px;
 }
 
 .range-toggle {
